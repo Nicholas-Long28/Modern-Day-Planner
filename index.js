@@ -1,4 +1,4 @@
-$(document).ready(function () {
+//Display date and time
 $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
 $(".saveBtn").on("click", function () {
@@ -9,7 +9,8 @@ $(".saveBtn").on("click", function () {
     localStorage.setItem(time,text);
 })
 
-$("#am8 .form-control").val(localStorage.getItem("am8"));
+//Log input into local storage
+$(".form-control").val(localStorage.getItem("am8"));
 $("#am9 .form-control").val(localStorage.getItem("am9"));
 $("#am10 .form-control").val(localStorage.getItem("am10"));
 $("#am11 .form-control").val(localStorage.getItem("am11"));
@@ -20,12 +21,13 @@ $("#pm3 .form-control").val(localStorage.getItem("pm3"));
 $("#pm4 .form-control").val(localStorage.getItem("pm4"));
 $("#pm5 .form-control").val(localStorage.getItem("pm5"));
 
+
 function hourTracker() {
     var currentHour = moment().hour();
 
-
+//Display available time and used time via color coding
     $('.time-block').each(function () {
-        var blockHour = parseInt($(this).attr('id').split('hour')[1]);
+        var blockHour = parseInt($(this).attr('id').split("blockHour")[1]);
         console.log(blockHour, currentHour)
 
         if (blockHour < currentHour) {
@@ -33,17 +35,16 @@ function hourTracker() {
             $(this).removeClass('future');
             $(this).removeClass('present');
         }
-        else if (blockHour > currentHour) {
-            $(this).addClass('future');
+        else if (blockHour === currentHour) {
+            $(this).removeClass('future');
             $(this).removeClass('past');
-            $(this).removeClass('present');
+            $(this).addClass('present');
         }
         else {
-            $(this).addClass('present');
+            $(this).removeClass('present');
             $(this).removeClass('past');
-            $(this).removeClass('future');
+            $(this).addClass('future');
         }
     })
-}
+    }
 hourTracker();
-})

@@ -1,6 +1,7 @@
 //Display date and time
 $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
+//Logs input to local storage
 $(".saveBtn").on("click", function () {
     console.log(this);
     var text = $(this).siblings(".description").val();
@@ -33,14 +34,14 @@ function hourUpdater() {
 
       // check if we've moved past this time
       if (timeBlock < currentHour) {
-        $(this).addClass("past");
-        $(this).removeClass("future");
-        $(this).removeClass("present");
+          $(this).removeClass("future");
+          $(this).removeClass("present");
+          $(this).addClass("past");
     }
     else if (timeBlock === currentHour) {
         $(this).removeClass("past");
-        $(this).addClass("present");
         $(this).removeClass("future");
+        $(this).addClass("present");
     }
     else {
         $(this).removeClass("present");

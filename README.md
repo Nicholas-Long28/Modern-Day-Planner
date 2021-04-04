@@ -5,7 +5,7 @@ Provide a short description explaining the what, why, and how of your project. U
 - What did you learn?
 ## Table of Contents (Optional)
 If your README is long, add a table of contents to make it easy for users to find what they need.
-- Navigate to the webpage via: https://github.com/Nicholas-Long28/Cant-Think-of-a-PW
+- Navigate to the webpage via: https://nicholas-long28.github.io/Modern-Day-Planner/
 - Navigate to exterior links and read the webpage clearly. 
 - Credits
 - MIT License
@@ -15,13 +15,14 @@ There are no further steps to access the page.
 Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     ```md
-    ![Website Preview](./assets\Homework 3.png)
+    ![Website Preview](/.assets\Daily Planner.png)
     ```
 ## Credits
 https://www.w3schools.com/
 https://stackoverflow.com/
 https://www.freecodecamp.org/news/
 https://developer.mozilla.org/en-US/
+https://www.youtube.com/
 
 ## License
 MIT License

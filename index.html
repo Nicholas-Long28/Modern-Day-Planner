@@ -18,15 +18,15 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+    <header class="jumbotron bg-primary">
+      <h1 class="font-weight-bold text-white display-3">Work Day Scheduler</h1>
+      <p class="text-white font-weight-bold lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="text-white font-weight-bold lead"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -35,8 +35,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">8:00am</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="8am"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="am8"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -45,8 +45,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">9:00am</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="9am"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="am9"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -56,8 +56,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">10:00am</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="10am"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="am10"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -67,8 +67,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">11:00am</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="11am"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="am11"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -78,8 +78,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">12:00pm</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="12pm"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="pm12"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -89,8 +89,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">1:00pm</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="1pm"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="pm1"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -100,8 +100,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">2:00pm</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="2pm"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="pm2"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -110,8 +110,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">3:00pm</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="3pm"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="pm3"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -120,8 +120,8 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">4:00pm</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="4pm"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="pm4"></textarea>
+          <button class=" btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
 
@@ -130,17 +130,15 @@
           <div class="input-group-prepend">        
             <span class="input-group-text hour">5:00pm</span>
           </div>
-          <textarea class="form-control" aria-label="With textarea" id="5pm"></textarea>
-          <button type="button" class="saveBtn"><i class="far fa-save"></i></button>
+          <textarea class="form-control" aria-label="With textarea" id="pm5"></textarea>
+          <button class="btn saveBtn"><i class="far fa-save"></i></button>
         </div>
       </div>
-
-      
-
-
+    
     </form>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>

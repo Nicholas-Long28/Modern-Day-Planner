@@ -10,24 +10,24 @@ $(".saveBtn").on("click", function () {
 })
 
 //Log input into local storage
-$(".form-control").val(localStorage.getItem("am8"));
-$("#am9 .form-control").val(localStorage.getItem("am9"));
-$("#am10 .form-control").val(localStorage.getItem("am10"));
-$("#am11 .form-control").val(localStorage.getItem("am11"));
-$("#pm12 .form-control").val(localStorage.getItem("pm12"));
-$("#pm1 .form-control").val(localStorage.getItem("pm1"));
-$("#pm2 .form-control").val(localStorage.getItem("pm2"));
-$("#pm3 .form-control").val(localStorage.getItem("pm3"));
-$("#pm4 .form-control").val(localStorage.getItem("pm4"));
-$("#pm5 .form-control").val(localStorage.getItem("pm5"));
+$("#8am .form-control").val(localStorage.getItem("8am"));
+$("#9am .form-control").val(localStorage.getItem("9am"));
+$("#10am .form-control").val(localStorage.getItem("10am"));
+$("#11am .form-control").val(localStorage.getItem("11am"));
+$("#12pm .form-control").val(localStorage.getItem("12pm"));
+$("#1pm .form-control").val(localStorage.getItem("1pm"));
+$("#2pm .form-control").val(localStorage.getItem("2pm"));
+$("#3pm .form-control").val(localStorage.getItem("3pm"));
+$("#4pm .form-control").val(localStorage.getItem("4pm"));
+$("#5pm .form-control").val(localStorage.getItem("5pm"));
 
 
 function hourTracker() {
     var currentHour = moment().hour();
 
 //Display available time and used time via color coding
-    $('.time-block').each(function () {
-        var blockHour = parseInt($(this).attr('id').split("blockHour")[1]);
+    $('.form-control').each(function () {
+        var blockHour = parseInt($(this).attr('id'));
         console.log(blockHour, currentHour)
 
         if (blockHour < currentHour) {
